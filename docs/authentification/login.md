@@ -10,7 +10,7 @@ L'API SIA permet aux utilisateurs de s'authentifier afin d'obtenir un token JWT,
 
 L'endpoint de connexion est accessible via une requête POST à l'URL suivante :
 ```
-https://your.domain.net/api/auth/login
+https://your.domain.net/auth/login
 ```
 
 ## Données requises
@@ -24,7 +24,7 @@ https://your.domain.net/api/auth/login
 
 ### cURL
 ```bash
-curl -X POST https://your.domain.net/api/auth/login \
+curl -X POST https://your.domain.net/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "email": "katy.perry@capitolrecords.com",
@@ -34,7 +34,7 @@ curl -X POST https://your.domain.net/api/auth/login \
 
 ### JavaScript/Fetch
 ```javascript
-fetch('https://your.domain.net/api/auth/login', {
+fetch('https://your.domain.net/auth/login', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

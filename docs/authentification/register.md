@@ -9,7 +9,7 @@ Cela leur permet de créer un compte personnel pour gérer leurs réservations a
 ## Endpoint d'inscription
 L'endpoint d'inscription est accessible via une requête POST à l'URL suivante :
 ```
-https://your.domain.net/api/auth/register
+https://your.domain.net/auth/register
 ```
 
 ## Données requises
@@ -29,7 +29,7 @@ Pour s'inscrire, les utilisateurs doivent fournir les informations suivantes dan
 
 ### cURL
 ```bash
-curl -X POST https://your.domain.net/api/auth/register \
+curl -X POST https://your.domain.net/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "surname": "Perry",
@@ -42,7 +42,7 @@ curl -X POST https://your.domain.net/api/auth/register \
 
 ### JavaScript/Fetch
 ```javascript
-fetch('https://your.domain.net/api/auth/register', {
+fetch('https://your.domain.net/auth/register', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ L'API effectue les validations suivantes :
 }
 ```
 
-> Le compte est créé mais aucune session n'est ouverte automatiquement. L'utilisateur doit ensuite s'authentifier via [`/api/auth/login`](./login.md) pour obtenir un token d'accès.
+> Le compte est créé mais aucune session n'est ouverte automatiquement. L'utilisateur doit ensuite s'authentifier via [`/auth/login`](./login.md) pour obtenir un token d'accès.
 
 ### Erreurs
 

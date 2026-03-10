@@ -8,7 +8,7 @@ Cet endpoint permet à un utilisateur authentifié de récupérer ses propres in
 
 ## Endpoint
 ```
-GET https://your.domain.net/api/auth/me
+GET https://your.domain.net/auth/me
 ```
 
 ## Authentification
@@ -22,13 +22,13 @@ Authorization: Bearer <token>
 
 ### cURL
 ```bash
-curl -X GET https://your.domain.net/api/auth/me \
+curl -X GET https://your.domain.net/auth/me \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 ```
 
 ### JavaScript/Fetch
 ```javascript
-fetch('https://your.domain.net/api/auth/me', {
+fetch('https://your.domain.net/auth/me', {
   method: 'GET',
   headers: {
     'Authorization': `Bearer ${token}`
