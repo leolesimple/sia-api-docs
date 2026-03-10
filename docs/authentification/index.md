@@ -5,10 +5,10 @@ L'API SIA utilise un système d'authentification basé sur **JWT (JSON Web Token
 ## Fonctionnement
 
 ### Inscription
-Création d'un compte via `/api/auth/register` avec les informations personnelles de l'utilisateur. Les mots de passe sont hachés avec bcrypt et un rôle `user` est attribué automatiquement.
+Création d'un compte via `/auth/register` avec les informations personnelles de l'utilisateur. Les mots de passe sont hachés avec bcrypt et un rôle `user` est attribué automatiquement.
 
 ### Connexion
-Authentification via `/api/auth/login` avec email/username et mot de passe. L'API retourne un token JWT contenant les informations de l'utilisateur.
+Authentification via `/auth/login` avec email/username et mot de passe. L'API retourne un token JWT contenant les informations de l'utilisateur.
 
 ### Utilisation
 Inclusion du token dans l'en-tête des requêtes protégées :
@@ -31,8 +31,7 @@ L'API valide la signature, l'expiration et les permissions du token à chaque re
 ## Endpoints
 
 - **[Inscription](./register)** - Créer un compte utilisateur
-- **Connexion** - Obtenir un token JWT
-- **Rafraîchissement** - Renouveler un token expiré
+- **[Connexion](./login)** - Obtenir un token JWT
 
 ## Structure de données
 

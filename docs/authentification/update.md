@@ -2,11 +2,11 @@
 
 Cet endpoint permet à un utilisateur authentifié de mettre à jour ses informations personnelles.
 
-> Le mot de passe ne peut pas être modifié via cet endpoint. Utiliser [`/api/auth/update_password`](./update_password.md) à cet effet.
+> Le mot de passe ne peut pas être modifié via cet endpoint. Utiliser [`/auth/me/password`](./update_password.md) à cet effet.
 
 ## Endpoint
 ```
-PUT https://your.domain.net/api/auth/update_me
+PUT https://your.domain.net/auth/me/update
 ```
 
 ## Authentification
@@ -31,7 +31,7 @@ Authorization: Bearer <token>
 
 ### cURL
 ```bash
-curl -X PUT https://your.domain.net/api/auth/update_me \
+curl -X PUT https://your.domain.net/auth/me/update \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
   -H "Content-Type: application/json" \
   -d '{
@@ -44,7 +44,7 @@ curl -X PUT https://your.domain.net/api/auth/update_me \
 
 ### JavaScript/Fetch
 ```javascript
-fetch('https://your.domain.net/api/auth/update_me', {
+fetch('https://your.domain.net/auth/me/update', {
   method: 'PUT',
   headers: {
     'Authorization': `Bearer ${token}`,
