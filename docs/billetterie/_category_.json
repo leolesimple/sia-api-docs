@@ -1,0 +1,8 @@
+{
+  "label": "Réservation",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "billetterie/index"
+  }
+}
