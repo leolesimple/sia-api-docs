@@ -1,0 +1,66 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Autour de l'API": {
+    "message": "Autour de l'API",
+    "description": "The title of the footer links column with title=Autour de l'API in the footer"
+  },
+  "link.title.Équipe": {
+    "message": "Équipe",
+    "description": "The title of the footer links column with title=Équipe in the footer"
+  },
+  "link.item.label.Authentification": {
+    "message": "Authentification",
+    "description": "The label of footer link with label=Authentification linking to /docs/authentification"
+  },
+  "link.item.label.Billetterie": {
+    "message": "Billetterie",
+    "description": "The label of footer link with label=Billetterie linking to /docs/billetterie"
+  },
+  "link.item.label.SAV": {
+    "message": "SAV",
+    "description": "The label of footer link with label=SAV linking to /docs/sav"
+  },
+  "link.item.label.SIA - Entre deux rives": {
+    "message": "SIA - Entre deux rives",
+    "description": "The label of footer link with label=SIA - Entre deux rives linking to https://sia-exposition.fr"
+  },
+  "link.item.label.Kaleido (Agence)": {
+    "message": "Kaleido (Agence)",
+    "description": "The label of footer link with label=Kaleido (Agence) linking to https://kaleido-agency.fr"
+  },
+  "link.item.label.Réservation en ligne": {
+    "message": "Réservation en ligne",
+    "description": "The label of footer link with label=Réservation en ligne linking to https://sia-exposition.fr/billetterie"
+  },
+  "link.item.label.Léo Lesimple": {
+    "message": "Léo Lesimple",
+    "description": "The label of footer link with label=Léo Lesimple linking to https://leolesimple.fr"
+  },
+  "link.item.label.Alex Fiol": {
+    "message": "Alex Fiol",
+    "description": "The label of footer link with label=Alex Fiol linking to https://acfiol.fr"
+  },
+  "link.item.label.Mariam Sarr": {
+    "message": "Mariam Sarr",
+    "description": "The label of footer link with label=Mariam Sarr linking to https://mariamsarr.fr/"
+  },
+  "link.item.label.Thelma Tabury": {
+    "message": "Thelma Tabury",
+    "description": "The label of footer link with label=Thelma Tabury linking to https://thelmatabury.fr"
+  },
+  "link.item.label.Inès Tahi": {
+    "message": "Inès Tahi",
+    "description": "The label of footer link with label=Inès Tahi linking to https://www.linkedin.com/in/ines-tahi-4a062a348/"
+  },
+  "link.item.label.Mariam Zoukrou": {
+    "message": "Mariam Zoukrou",
+    "description": "The label of footer link with label=Mariam Zoukrou linking to https://www.linkedin.com/in/mariam-zoukrou-68863b34b/"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 My Project, Inc. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

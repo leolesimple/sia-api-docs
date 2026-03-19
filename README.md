@@ -1,41 +1,88 @@
-# Website
+# SIA API Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentation technique de l'API SIA (authentification, billetterie et SAV), construite avec [Docusaurus](https://docusaurus.io/).
 
-## Installation
+## Aperçu
 
-```bash
-yarn
-```
+- Site de documentation: `https://docs.sia-exposition.fr`
+- Framework: Docusaurus `3.9.2`
+- Langue principale: français (`fr`)
+- Runtime Node.js: `>=20.0`
 
-## Local Development
+## Démarrage rapide
 
-```bash
-yarn start
-```
+### Prérequis
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- Node.js `>=20`
+- npm (fourni avec Node.js)
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+### Installation
 
 ```bash
-USE_SSH=true yarn deploy
+npm install
 ```
 
-Not using SSH:
+### Lancer en local
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Le serveur de développement démarre avec rechargement automatique des pages.
+
+## Scripts utiles
+
+```bash
+npm run start
+npm run build
+npm run serve
+npm run clear
+npm run deploy
+npm run write-translations
+npm run write-heading-ids
+```
+
+## Structure de la documentation
+
+Les contenus sont organisés dans le dossier `docs/`:
+
+- `docs/authentification/`
+  - `index`, `register`, `login`, `me`, `update`, `update_password`, `delete`
+- `docs/billetterie/`
+  - `index`, `create`, `get_mine`, `transfer`, `delete`
+- `docs/sav/`
+  - `index`, `create`
+
+La navigation est définie dans `sidebars.js`.
+
+## Build de production
+
+```bash
+npm run build
+```
+
+Le build génère les fichiers statiques dans `build/`.
+
+## Déploiement
+
+```bash
+npm run deploy
+```
+
+Selon votre cible, vous pouvez aussi utiliser les variables d'environnement Docusaurus classiques (`USE_SSH`, `GIT_USER`, etc.).
+
+## Contribution
+
+1. Créez une branche à partir de `main`.
+2. Modifiez les pages Markdown dans `docs/`.
+3. Vérifiez en local avec `npm run start`.
+4. Lancez `npm run build` avant d'ouvrir une PR.
+
+## Notes connues
+
+- Le projet est strict sur les liens cassés (`onBrokenLinks: 'throw'`).
+- Si le build échoue avec un lien `/blog`, retirez ce lien de la configuration du thème (navbar/footer) ou activez le blog.
+
+## Équipe
+
+Le footer du site contient les liens vers les membres de l'équipe (portfolio/LinkedIn) et les sites liés au projet SIA.
