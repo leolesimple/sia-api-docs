@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Authentification": {
+    "message": "Authentification",
+    "description": "The label for category 'Authentification' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Réservation": {
+    "message": "Réservation",
+    "description": "The label for category 'Réservation' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.SAV": {
+    "message": "SAV",
+    "description": "The label for category 'SAV' in sidebar 'tutorialSidebar'"
+  }
+}
